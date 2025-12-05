@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <button onclick="button1()">button1</button>
+        <button onclick="button2()">button2</button>
+        <p id="result"></p>
+        <script>
+            var points=[10,11,12,13,14];
+            document.getElementById("result").innerHTML=points;
+            function button1(){
+            points.sort(function(a,b){return a-b});
+            document.getElementById("result").innerHTML=points;
+            }
+            function button2(){
+                points.sort(function(a,b){return b-a});
+                document.getElementById("result").innerHTML=points;
+            }
+        </script>
+        <p id="sum_value"></p>
+        <script>
+            var numbers=[10,11,12,13,13];
+            function myFunction (num){
+                return num+10;
+            }
+            var newarray=numbers.map(myFunction);
+            document.getElementById("sum_value").innerHTML=newarry;
+        </script>
+    </body>
+</html>
